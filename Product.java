@@ -1,10 +1,11 @@
 import java.util.Objects;
 
 public class Product {
-        int key=0;
-        String name;
-        int price;
-    public Product(String name, int price) {
+        private String key;
+        private String name;
+        private int price;
+    public Product(String key, String name, int price) {
+        this.key = key;
         this.price = price;
         this.name = name;
     }
@@ -12,8 +13,7 @@ public class Product {
         return price;
     }
 
-    public int getKey() {
-        key = key+1;
+    public String getKey() {
         return key;
     }
 
